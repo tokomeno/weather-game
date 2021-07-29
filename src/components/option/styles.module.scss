@@ -1,0 +1,47 @@
+@import '../../scss/media_breakpoints';
+
+.item {
+  background: #f7f7fd;
+  box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, 0.2);
+  transition: box-shadow 0.4s ease;
+  opacity: 1;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px 20px 20px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+
+  cursor: pointer;
+  min-width: 245px;
+  height: 110px;
+  margin-top: 10px;
+  margin-right: 15px;
+
+  &:hover {
+    box-shadow: 2px 4px 8px 0 rgba(59, 60, 61, 0.2);
+  }
+  p {
+    margin-bottom: 0;
+  }
+
+  &.wrong {
+    border: 2px solid #f75d59 !important;
+    background-color: rgba(244, 126, 124, 0.1);
+  }
+  &.correct {
+    border: 2px solid #54b773 !important;
+    background-color: rgba(84, 183, 115, 0.1);
+  }
+
+  // @media #{$sm-phone-media} {
+  //   &:nth-child(1) {
+  //     margin-right: 0;
+  //   }
+  // }
+}
+.temperatureWrapper {
+  height: 42px;
+  padding-top: 10px;
+}

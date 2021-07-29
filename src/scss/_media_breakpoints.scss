@@ -1,0 +1,10 @@
+$sm-phones: 320px;
+$md-phones: 420px;
+$big-phones: 767.98px;
+$tablets: 991.98px;
+$break-large: 1200px;
+
+$sm-phone-media: 'only screen and (max-width : #{$sm-phones})';
+$md-phone-media: 'only screen and (max-width : #{$md-phones})';
+$big-phone-media: 'only screen and (max-width : #{$big-phones})';
+$tablets-media: 'only screen and (max-width : #{$tablets})';
