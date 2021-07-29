@@ -74,7 +74,7 @@ export const GameSettingsPage: React.FC<Props> = () => {
       <h5 className="my-3">History</h5>
       {userAnswers.map((answer, i) => (
         <>
-          <div className="d-flex mt-4 flex-wrap">
+          <div key={i} className="d-flex mt-4 flex-wrap">
             {answer.cities.map((city) => (
               <Option
                 hasAnswered={true}
