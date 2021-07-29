@@ -35,7 +35,7 @@ export const GameSettingsPage: React.FC<Props> = () => {
       <h3>Settings</h3>
       <h5>Choose Option length</h5>
       {[2, 3, 4, 5].map((num) => (
-        <div className="form-check">
+        <div key={num} className="form-check">
           <input
             className="form-check-input"
             type="radio"
@@ -55,7 +55,7 @@ export const GameSettingsPage: React.FC<Props> = () => {
       ))}
       <h5 className="my-3">Units</h5>
       {[TemperatureUnit.celsius, TemperatureUnit.fahrenheit].map((unit) => (
-        <div className="form-check">
+        <div className="form-check" key={unit}>
           <input
             className="form-check-input"
             type="radio"

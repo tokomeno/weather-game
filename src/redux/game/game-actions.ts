@@ -1,5 +1,3 @@
-import { ICity } from '../../http/cities.http';
-import { store } from '../store';
 import {
   IRestartGameAction,
   ISetCitiesInfoAction,
